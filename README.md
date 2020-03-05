@@ -1,9 +1,10 @@
 # misc
 Misc working related stuff 
-bluetoothconsole_git: it is a Visual Studio 2015 C++ program to demostrate the Windows winsock/Bluetooth API to use RFCOMM to communicate with a Bluetooth device.
+
+* bluetoothconsole_git: it is a Visual Studio 2015 C++ program to demostrate the Windows winsock/Bluetooth API to use RFCOMM to communicate with a Bluetooth device.
 
 
-/////////////////////////////////////////////////////////////
+* C++ lambda
 void do_something(std::function<void(int )> callback, int x)
 {
 
@@ -16,8 +17,8 @@ int num_callbacks=0;
 do_something(callback,1);
 do_something(callback,2);
 do_something(callback,3);
-/////////////////////////////////////////////////////////////////
-ubuntu assign USBtty to certain fixed name with given USB port.
+
+* ubuntu assign USBtty to certain fixed name with given USB port.
 1) plug in ttyUSB device for example /dev/ttyUSB2 and use command "udevadm info -a -n /dev/ttyUSB2| grep '{devpath}'"
    It will show something like 
     ATTRS{devpath}=="9"
