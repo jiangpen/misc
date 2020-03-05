@@ -5,7 +5,7 @@ Misc working related stuff
 
 
 * C++ lambda
-`
+```
 void do_something(std::function<void(int )> callback, int x)
 {
 
@@ -18,7 +18,7 @@ int num_callbacks=0;
 do_something(callback,1);
 do_something(callback,2);
 do_something(callback,3);
-`
+```
 
 * ubuntu assign USBtty to certain fixed name with given USB port.
 1) plug in ttyUSB device for example /dev/ttyUSB2 and use command "udevadm info -a -n /dev/ttyUSB2| grep '{devpath}'"
